@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ["hello", false, 4, "world", 10, true];
+        let newArr = [];
+
+        for (let i = 0; i < arr.length; i++) {
+            if (Number.isInteger(arr[i])) {
+                newArr.push(arr[i]);
+            }
+        }
+
+        if (newArr.length > 0) {
+            console.log("Các số nguyên có trong mảng là:");
+            for (let i = 0; i < newArr.length; i++) {
+                console.log(newArr[i]);
+            }
+        } else {
+            console.log("Trong mảng không tồn tại số nguyên");
+        }
+    </script>
+</body>
+</html>
